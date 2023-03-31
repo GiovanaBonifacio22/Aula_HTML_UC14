@@ -1,0 +1,25 @@
+<HTML>
+<HEAD>
+<SCRIPT>
+function testa_form()
+{
+var n=document.forms["formalunos"] ["nome_aluno"].value;
+var m=document.forms["formalunos"] ["matricula"].value;
+
+if (m== null || m =="")
+{
+alert("Numero de Matricula precisa ser informado");
+return false;
+}
+if (n==null || n=="")
+{
+alert("Nome de aluno precisa ser informado");
+return false;
+}
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<H1>Sistema Academico - Justif</H1>
+</BODY>
+</HTML>

@@ -1,0 +1,26 @@
+<HTML>
+<HEAD>
+<SCRIPT>
+
+  function justifica_falta(form)
+ {
+ var jf= confrim("Justificativa Falta"+form.nome_aluno.value+"?");
+if (jf == true)
+ var texto_jf = prompt("Digite a justificativa apresentada");
+else
+alert("Falta não justificada");
+}
+
+</SCRIPT>
+</HEAD>
+<BODY>
+    <H1>Sistema Acadêmico - Justificativa de Falta</H1>
+    <FROM NAME="myform" ACTION="" METHOD="GET">
+    Matricula:<INPUT TYPE="text" NAME="matricula"> <BR>
+    Nome: <INPUT TYPE="text" NAME="nome_aluno"> <BR>
+    Data da falta:<INPUT TYPE="text" NAME="falta"> <BR>
+    <INPUT TYPE=" button" NAME="button"
+    Value="Justificar Falta" onCllick="justificativa_falta(this.form)">
+    </FROM>
+</BODY>
+</HTML>
